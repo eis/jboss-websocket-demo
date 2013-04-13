@@ -24,6 +24,14 @@ public class IndexServlet extends HttpServlet {
         
         log.debug("It's us here");
 
+        String socketURL = String.format("%s:%s%s%s",
+                                request.getServerName(),
+                                request.getServerPort(),
+                                request.getContextPath(),
+                                MyWebSocketServlet.SOCKET_PATH);
+        
+        request.setAttribute("socketURL", socketURL);
+
         RequestDispatcher rd = getServletContext().getRequestDispatcher(destination);
         rd.forward(request, response);        
     }    
