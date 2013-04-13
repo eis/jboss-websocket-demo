@@ -1,0 +1,21 @@
+#error_msg
+{
+	color:     red;
+}
+#input input
+{
+	width:     100%;
+}
+#input
+{
+	position:  absolute;
+	bottom:    20px;
+	right:     20px;
+	left:      20px;
+}
+#tabs
+{
+	position:  absolute;
+	height:    95%;
+	width:     95%;
+}
