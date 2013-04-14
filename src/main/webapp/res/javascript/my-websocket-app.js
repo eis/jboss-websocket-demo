@@ -34,7 +34,7 @@ function inputKeyDownHandler(event) {
     event.preventDefault();
     var textToSend = $('#input input').val();
     ws.send(textToSend);
-    setTimeout(clearInput, 350);
+    setTimeout(clearInput, 150);
 }
 
 function clearInput() {
