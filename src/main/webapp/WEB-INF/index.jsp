@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Chat</title>
+    <title>WebSocket Chat</title>
     <link rel="stylesheet" href="res/stylesheets/jquery-ui-1.10.2.css" />
     <link rel="stylesheet" href="res/stylesheets/chat.css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
