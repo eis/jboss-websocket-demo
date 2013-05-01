@@ -8,6 +8,9 @@
   <packaging>war</packaging>
   <name>JBoss 7.2 WebSocket POC</name>
   <description>JBoss 7.2 WebSocket POC</description>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>  
   <repositories>
     <repository>
       <id>jboss-public-repository-group</id>
@@ -159,6 +162,7 @@
             <plugin>
                 <groupId>org.jboss.as.plugins</groupId>
                 <artifactId>jboss-as-maven-plugin</artifactId>
+                <version>7.3.Final</version>
                 <configuration>
                      <filename>${project.build.finalName}.${project.packaging}</filename>
                 </configuration>
@@ -169,7 +173,7 @@
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
-            </plugin>         
+            </plugin>
         </plugins>
     </build>
 
