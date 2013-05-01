@@ -67,7 +67,7 @@
       <releases>
         <updatePolicy>never</updatePolicy>
       </releases>
-    </pluginRepository>    
+    </pluginRepository>
   </pluginRepositories>
 
   <dependencies>
