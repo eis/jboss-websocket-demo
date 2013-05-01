@@ -1,4 +1,6 @@
-JBoss EAP 6.1 (AS 7.2) using WebSocket alpha extension + jQuery websockets
+JBoss EAP 6.1 (AS 7.2) using WebSocket alpha extension + jQuery + websockets
+
+Requirement: JBoss AS 7.1.2 or later.
 
 Tested with Windows 7, 64-bit, EAP 6.1.Alpha, Oracle JDK 7
 
