@@ -68,7 +68,7 @@ public class MyWebSocketServlet extends WebSocketServlet {
 
     private static String asJSON(Pair<Long, String> message) {
         
-        return String.format("{\"timeMillis\": \"%s\", \"content\": \"%s\"}",
+        return String.format("{\"timestamp\": \"%s\", \"content\": \"%s\"}",
                 encode(message.getLeft().toString()),
                 encode(message.getRight())
                 );

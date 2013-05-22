@@ -14,7 +14,7 @@ $(function() {
         // listen for messages from server using standard syntax
         ws.onmessage = function (event) {
            var messageFromServer = jQuery.parseJSON(event.data);
-           addMessage(messageFromServer.timeMillis, messageFromServer.content);
+           addMessage(messageFromServer.timestamp, messageFromServer.content);
         };
         ws.onerror = function (event) {
                 $('#error_msg').html('Error: WebSocket not supported by the server');
@@ -53,18 +53,18 @@ function clearInput() {
     $('#input input').val("");
 }
 
-function addMessage(timeMillis, content) {
-    var time = getTimeFromMillis(timeMillis);
+function addMessage(timestamp, content) {
+    var time = getTimeFromTimestamp(timestamp);
     $("#messages").append(time + ' ' + content + '<br />');
 };
 
-function getTimeFromMillis(timeMillis) {
-    
-    var time            = timeMillis / 1000;
-    var dateTime        = new Date(time);
-    var hours           = dateTime.getHours();
-    var minutes         = dateTime.getMinutes();
-    var seconds         = dateTime.getSeconds();
-    
+function getTimeFromTimestamp(timestampString) {
+
+    var timestamp       = parseInt(timestampString, 10);
+    var dateTime        = new Date(timestamp);
+    var hours           = dateTime.getHours()   < 10 ? ("0" + dateTime.getHours()) : dateTime.getHours();
+    var minutes         = dateTime.getMinutes() < 10 ? ("0" + dateTime.getMinutes()) : dateTime.getMinutes();
+    var seconds         = dateTime.getSeconds() < 10 ? ("0" + dateTime.getSeconds()) : dateTime.getSeconds();
+
     return hours + ':' + minutes + ':' + seconds;
 }
