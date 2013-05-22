@@ -1,23 +1,23 @@
 #error_msg
 {
-	color:     red;
+    color:     red;
 }
 #input input
 {
-	width:     100%;
+    width:     100%;
 }
 #input
 {
-	position:  absolute;
-	bottom:    20px;
-	right:     20px;
-	left:      20px;
+    position:  absolute;
+    bottom:    20px;
+    right:     20px;
+    left:      20px;
 }
 #tabs
 {
-	position:  absolute;
-	height:    95%;
-	width:     95%;
+    position:  absolute;
+    height:    95%;
+    width:     95%;
 }
 #messages
 {
