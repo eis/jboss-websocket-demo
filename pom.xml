@@ -111,6 +111,10 @@
             <groupId>org.atmosphere.jboss.as</groupId>
             <artifactId>jboss-as-websockets</artifactId>
             <version>0.3</version>
+            <!--
+            0.4 version of this dependency contains a bug on
+            unrecognized frames (#2), so using 0.3 instead.
+             -->
             <exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
