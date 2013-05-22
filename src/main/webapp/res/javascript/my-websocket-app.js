@@ -1,4 +1,6 @@
 var ws = undefined;
+var scrollHandle = undefined;
+var messagesDiv = undefined;
 
 $(function() {
     if (window.WebSocket) {
@@ -24,8 +26,18 @@ $(function() {
 
     $('#input input').keydown(inputKeyDownHandler);
     $('#input input').focus();
+    
+    messagesDiv = document.getElementById('messages');
+    scrollHandle = window.setInterval(scrollToBottom, 150);
 });
 
+function scrollToBottom() {
+    if (messagesDiv !== undefined) {
+        messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    } else {
+        clearInterval(scrollHandle);
+    }
+}
 
 function inputKeyDownHandler(event) {
     if (event.which != 13) {

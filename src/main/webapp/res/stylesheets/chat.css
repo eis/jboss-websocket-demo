@@ -19,3 +19,12 @@
 	height:    95%;
 	width:     95%;
 }
+#messages
+{
+    position:   absolute;
+    bottom:     60px;
+    right:      20px;
+    left:       20px;
+    top:        70px;
+    overflow-y: scroll;
+}
