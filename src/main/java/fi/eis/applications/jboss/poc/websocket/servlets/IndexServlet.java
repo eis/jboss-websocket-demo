@@ -15,7 +15,7 @@ import org.jboss.logging.Logger;
 @WebServlet("") // In servlets 3.0, empty value means bind to front page and only that
                 // "/" would bind to all requests
 public class IndexServlet extends HttpServlet {
-    private static final String destination = "/WEB-INF/index.jsp";
+    private static final String destination = "/index.jsp";
 
     private final Logger log = Logger.getLogger(this.getClass());
     
