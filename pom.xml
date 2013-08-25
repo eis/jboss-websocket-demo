@@ -114,6 +114,8 @@
             <!--
             0.4 version of this dependency contains a bug on
             unrecognized frames (#2), so using 0.3 instead.
+            Version 0.5 should contain revert of that problem,
+            so that one should be ok as well once it gets released.
              -->
             <exclusions>
                 <exclusion>
