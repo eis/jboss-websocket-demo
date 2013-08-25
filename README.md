@@ -22,7 +22,10 @@ to:
 ```
 in standalone.xml / domain.xml
 
-That's it. For some unusual environments, such as ARM architecture, native connectors are not available OOB.
+That's it. For some environments, such as ARM architecture, native connectors are not available OOB.
 If this is the case, you'll get an error message about missing libraries when starting up JBoss with
 native enabled. They can be compiled from source code however. Download link: http://www.jboss.org/jbossweb/downloads.html ->
 JBoss Web Native Connectors -> source tarball, compiling and installing: https://community.jboss.org/wiki/JbosswebBuildNative.
+
+It's been reported that native libraries needs to be installed separately on OSX as well (see
+[issue #6](https://github.com/eis/jboss-websocket-demo/issues/6)).
