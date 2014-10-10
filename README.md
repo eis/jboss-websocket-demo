@@ -32,9 +32,9 @@ in standalone.xml / domain.xml
 
 That should be it, as the native connectors *should* be packaged with the installation out of the box.
 After that you can start your JBoss, issue `mvn clean package jboss-as:deploy -Djboss-as.username=YOURUSERNAME
--Djboss-as.password=YOURPASS`, open your browser and navigate to http://localhost:8080/websocket-web-app/
+-Djboss-as.password=YOURPASS`, open your browser and navigate to [http://localhost:8080/websocket-web-app/](http://localhost:8080/websocket-web-app/)
 
-If ono startup you get an error like this:
+If on startup you get an error like this:
 
 ```
 21:27:30,434 INFO  [org.apache.catalina.core] (MSC service thread 1-10) JBWEB001065: The native library which allows optimal
@@ -74,7 +74,7 @@ Recommended steps:
  - Login with vagrant/vagrant (the black screen you see is just a screen saver, it'll go away when you type)
  - Start graphical window system with `startx`
  - Start firefox with firefox icon on the top of the screen (if you don't have a mouse cursor, restart the VM. Machine -> Reset.)
- - Navigate to http://localhost:8080/websocket-web-app/
+ - Navigate to [http://localhost:8080/websocket-web-app/](http://localhost:8080/websocket-web-app/)
 
 You can also not download JBoss EAP yourself, in which case the script will download the source codes and build the EAP for you.
 This is slow though. It takes about an hour on my machine. The reason the script doesn't just download the binary is JBoss EAP
