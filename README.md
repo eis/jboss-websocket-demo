@@ -66,8 +66,9 @@ Requirements for this:
  - Support for 64-bit VMs (often means 64-bit host OS + virtualization support turned on from BIOS)
  - 500MB memory to spare to throw to VM
 
-Recommended steps:
+Recommended pre-step:
  - download JBoss EAP 6.1 and save the downloaded jboss-eap-6.1.0.zip to the same folder as this file (has to be exactly that file!)
+Required steps:
  - run `vagrant up` (will take some time, 30+ minutes)
  - run `mvn clean package jboss-as:deploy -Djboss-as.username=admin -Djboss-as.password=adminpass1!`
  - Switch to VM window
@@ -76,10 +77,10 @@ Recommended steps:
  - Start firefox with firefox icon on the top of the screen (if you don't have a mouse cursor, restart the VM. Machine -> Reset.)
  - Navigate to [http://localhost:8080/websocket-web-app/](http://localhost:8080/websocket-web-app/)
 
-You can also not download JBoss EAP yourself, in which case the script will download the source codes and build the EAP for you.
-This is slow though. It takes about an hour on my machine. The reason the script doesn't just download the binary is JBoss EAP
-licensing preventing that. However, building it from source code should be ok. It only build it once, after which it leaves the
-built .zip file in this folder.
+You don't have to download JBoss EAP yourself, in which case the script will download the source codes and build the EAP for you.
+This is slow though, it takes about an hour on my machine. The reason the script doesn't just download the binary is JBoss EAP
+licensing. However, building it from source code should be ok. It will only build it once, after which it leaves the built .zip
+file in this folder from where it can be used on subsequent VM creations if needed.
 
 Reason for using a browser within VM is that VirtualBox seems to have issues with exposing WebSockets outside VM. Regular
 HTTP traffic works just fine.
