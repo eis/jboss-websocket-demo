@@ -5,3 +5,9 @@ target
 .project
 .settings
 .classpath
+
+# Generated packages
+*.zip
+
+# Vagrant internal repo
+.vagrant

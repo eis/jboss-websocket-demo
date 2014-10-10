@@ -1,0 +1,9 @@
+[submodule "chef-recipes/cookbooks/ark"]
+	path = chef-recipes/cookbooks/ark
+	url = https://github.com/eis/ark.git
+[submodule "chef-recipes/cookbooks/build-essential"]
+	path = chef-recipes/cookbooks/build-essential
+	url = https://github.com/opscode-cookbooks/build-essential.git
+[submodule "chef-recipes/cookbooks/jboss-eap"]
+	path = chef-recipes/cookbooks/jboss-eap
+	url = https://github.com/andrewfraley/chef-jboss-eap.git
