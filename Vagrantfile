@@ -83,7 +83,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # GUI settings for testing
   # Needs more memory than the default
   config.vm.provider :virtualbox do |vb|
-    #vb.customize ["modifyvm", :id, "--memory", 4084]
     vb.gui = true
   end
 

@@ -64,7 +64,7 @@ Requirements for this:
  - [VirtualBox](https://www.virtualbox.org/) installed
  - Vagrant-omnibus plugin for Vagrant (Installing: `vagrant plugin install vagrant-omnibus`)
  - Support for 64-bit VMs (often means 64-bit host OS + virtualization support turned on from BIOS)
- - Enough memory to have 4GB to spare to throw to VM
+ - 500MB memory to spare to throw to VM
 
 Recommended steps:
  - download JBoss EAP 6.1 and save the downloaded jboss-eap-6.1.0.zip to the same folder as this file (has to be exactly that file!)
